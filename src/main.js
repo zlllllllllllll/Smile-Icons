@@ -43,7 +43,7 @@ var icons = {
     fileExtensions: {
 
     },
-    filenames: {
+    fileNames: {
 
     },
     folderNames: {
@@ -64,7 +64,7 @@ action("./extensions", (file, name) =>
 })
 action("./files", (file, name) =>
 {
-    icons.filenames[name] = name
+    icons.fileNames[name] = name
     icons.iconDefinitions[name] = { iconPath: "./icons/" + name + ".svg" }
 })
 action("./folders", (file, name) =>
@@ -98,6 +98,12 @@ action("../icons", (file, name) =>
     console.log("压缩：" + name)
     child_process.execFileSync("svgo", [file])
 })
+
+console.log("清理现有文件")
+fse.removeSync("./default")
+fse.removeSync("./extensions")
+fse.removeSync("./files")
+fse.removeSync("./folders")
 
 console.log("完成")
 process.exit()
