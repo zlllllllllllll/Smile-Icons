@@ -1,0 +1,39 @@
+{
+    "iconDefinitions": {
+        "file": {
+            "iconPath": "./icons/file.svg"
+        },
+        "folder": {
+            "iconPath": "./icons/folder.svg"
+        },
+        "folderExpanded": {
+            "iconPath": "./icons/folder.expanded.svg"
+        },
+        ".vscode.expanded": {
+            "iconPath": "./icons/.vscode.expanded.svg"
+        },
+        ".vscode": {
+            "iconPath": "./icons/.vscode.svg"
+        },
+        "node_modules.expanded": {
+            "iconPath": "./icons/node_modules.expanded.svg"
+        },
+        "node_modules": {
+            "iconPath": "./icons/node_modules.svg"
+        }
+    },
+    "file": "file",
+    "folder": "folder",
+    "folderExpanded": "folderExpanded",
+    "fileExtensions": {},
+    "filenames": {},
+    "folderNames": {
+        ".vscode": ".vscode",
+        "node_modules": "node_modules"
+    },
+    "folderNamesExpanded": {
+        ".vscode": ".vscode.expanded",
+        "node_modules": "node_modules.expanded"
+    },
+    "light": {}
+}

@@ -1,0 +1,27 @@
+{
+    "name": "smile-icons",
+    "displayName": "Smile Icons",
+    "description": "做一些我所喜欢的图标",
+    "version": "1.0.0",
+    "publisher": "ONEO",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "icon": "./icons/icon.svg",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/1217950746/vscode-smile-icons"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "iconThemes": [
+            {
+                "id": "smile-icons",
+                "label": "Smile Icons",
+                "path": "./icons.json"
+            }
+        ]
+    }
+}
