@@ -9,6 +9,21 @@
         "folderExpanded": {
             "iconPath": "./icons/folder.expanded.svg"
         },
+        "js": {
+            "iconPath": "./icons/js.svg"
+        },
+        "json": {
+            "iconPath": "./icons/json.svg"
+        },
+        "sketch": {
+            "iconPath": "./icons/sketch.svg"
+        },
+        "txt": {
+            "iconPath": "./icons/txt.svg"
+        },
+        "license": {
+            "iconPath": "./icons/license.svg"
+        },
         ".vscode.expanded": {
             "iconPath": "./icons/.vscode.expanded.svg"
         },
@@ -25,8 +40,15 @@
     "file": "file",
     "folder": "folder",
     "folderExpanded": "folderExpanded",
-    "fileExtensions": {},
-    "filenames": {},
+    "fileExtensions": {
+        "js": "js",
+        "json": "json",
+        "sketch": "sketch",
+        "txt": "txt"
+    },
+    "fileNames": {
+        "license": "license"
+    },
     "folderNames": {
         ".vscode": ".vscode",
         "node_modules": "node_modules"
