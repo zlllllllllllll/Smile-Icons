@@ -7,13 +7,19 @@ var child_process = require("child_process")
 
 function action(dir, callback)
 {
-    fs.readdirSync(dir).forEach(filename =>
+    if (fse.existsSync(dir))
     {
-        if (getExtension(filename) == "svg")
+        if (fse.statSync(dir).isDirectory())
         {
-            callback(path.join(dir, filename), getName(filename))
+            fs.readdirSync(dir).forEach(filename =>
+            {
+                if (getExtension(filename) == "svg")
+                {
+                    callback(path.join(dir, filename), getName(filename))
+                }
+            })
         }
-    })
+    }
 }
 function getName(filename)
 {
@@ -23,18 +29,37 @@ function getExtension(filename)
 {
     return filename.split(".").slice(-1).join(".")
 }
+function copy(dir1, dir2)
+{
+    if (fse.existsSync(dir1))
+    {
+        if (fse.statSync(dir1).isDirectory())
+        {
+            fse.copySync(dir1, dir2)
+        }
+    }
+}
+
+var src = path.dirname(process.argv[1])
+var root = path.dirname(src)
+var iconsDir = path.join(root, "icons")
+var iconsJsonFile = path.join(iconsDir, "icons.json")
+var defaultIconsDir = path.join(src, "default")
+var extensionsIconsDir = path.join(src, "extensions")
+var filesIconsDir = path.join(src, "files")
+var foldersIconsDir = path.join(src, "folders")
 
 console.log("生成IconsJson文件")
 var icons = {
     iconDefinitions: {
         file: {
-            iconPath: "./icons/file.svg"
+            iconPath: "./file.svg"
         },
         folder: {
-            iconPath: "./icons/folder.svg"
+            iconPath: "./folder.svg"
         },
         folderExpanded: {
-            iconPath: "./icons/folder.expanded.svg"
+            iconPath: "./folder.expanded.svg"
         }
     },
     file: "file",
@@ -57,53 +82,53 @@ var icons = {
         // 内容与正常模式下一样
     }
 }
-action("./extensions", (file, name) =>
+action(extensionsIconsDir, (file, name) =>
 {
     icons.fileExtensions[name] = name
-    icons.iconDefinitions[name] = { iconPath: "./icons/" + name + ".svg" }
+    icons.iconDefinitions[name] = { iconPath: "./" + name + ".svg" }
 })
-action("./files", (file, name) =>
+action(filesIconsDir, (file, name) =>
 {
     icons.fileNames[name] = name
-    icons.iconDefinitions[name] = { iconPath: "./icons/" + name + ".svg" }
+    icons.iconDefinitions[name] = { iconPath: "./" + name + ".svg" }
 })
-action("./folders", (file, name) =>
+action(foldersIconsDir, (file, name) =>
 {
     if (getExtension(name) == "expanded")
     {
         icons.folderNamesExpanded[getName(name)] = name
-        icons.iconDefinitions[name] = { iconPath: "./icons/" + name + ".svg" }
+        icons.iconDefinitions[name] = { iconPath: "./" + name + ".svg" }
     }
     else
     {
         icons.folderNames[name] = name
-        icons.iconDefinitions[name] = { iconPath: "./icons/" + name + ".svg" }
+        icons.iconDefinitions[name] = { iconPath: "./" + name + ".svg" }
     }
 })
-fse.outputJsonSync("../icons.json", icons, { spaces: 4 })
 
-console.log("清理图标缓存")
-fse.removeSync("../icons")
+fse.removeSync(iconsDir)
+fse.ensureDirSync(iconsDir)
+fse.outputJsonSync(iconsJsonFile, icons, { spaces: 4 })
 
 console.log("复制新的图标")
-fse.copySync("./default", "../icons")
-fse.copySync("./extensions", "../icons")
-fse.copySync("./files", "../icons")
-fse.copySync("./folders", "../icons")
+copy(defaultIconsDir, iconsDir)
+copy(extensionsIconsDir, iconsDir)
+copy(filesIconsDir, iconsDir)
+copy(foldersIconsDir, iconsDir)
 
 
 console.log("压缩图标文件")
-action("../icons", (file, name) =>
+action(iconsDir, (file, name) =>
 {
     console.log("压缩：" + name)
     child_process.execFileSync("svgo", [file])
 })
 
 console.log("清理现有文件")
-fse.removeSync("./default")
-fse.removeSync("./extensions")
-fse.removeSync("./files")
-fse.removeSync("./folders")
+fse.removeSync(defaultIconsDir)
+fse.removeSync(extensionsIconsDir)
+fse.removeSync(filesIconsDir)
+fse.removeSync(foldersIconsDir)
 
 console.log("完成")
 process.exit()

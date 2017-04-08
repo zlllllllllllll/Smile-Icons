@@ -1,40 +1,40 @@
 {
     "iconDefinitions": {
         "file": {
-            "iconPath": "./icons/file.svg"
+            "iconPath": "./file.svg"
         },
         "folder": {
-            "iconPath": "./icons/folder.svg"
+            "iconPath": "./folder.svg"
         },
         "folderExpanded": {
-            "iconPath": "./icons/folder.expanded.svg"
+            "iconPath": "./folder.expanded.svg"
         },
         "js": {
-            "iconPath": "./icons/js.svg"
+            "iconPath": "./js.svg"
         },
         "json": {
-            "iconPath": "./icons/json.svg"
+            "iconPath": "./json.svg"
         },
         "sketch": {
-            "iconPath": "./icons/sketch.svg"
+            "iconPath": "./sketch.svg"
         },
         "txt": {
-            "iconPath": "./icons/txt.svg"
+            "iconPath": "./txt.svg"
         },
         "license": {
-            "iconPath": "./icons/license.svg"
+            "iconPath": "./license.svg"
         },
         ".vscode.expanded": {
-            "iconPath": "./icons/.vscode.expanded.svg"
+            "iconPath": "./.vscode.expanded.svg"
         },
         ".vscode": {
-            "iconPath": "./icons/.vscode.svg"
+            "iconPath": "./.vscode.svg"
         },
         "node_modules.expanded": {
-            "iconPath": "./icons/node_modules.expanded.svg"
+            "iconPath": "./node_modules.expanded.svg"
         },
         "node_modules": {
-            "iconPath": "./icons/node_modules.svg"
+            "iconPath": "./node_modules.svg"
         }
     },
     "file": "file",

@@ -20,7 +20,7 @@
             {
                 "id": "smile-icons",
                 "label": "Smile Icons",
-                "path": "./icons.json"
+                "path": "./icons/icons.json"
             }
         ]
     }
