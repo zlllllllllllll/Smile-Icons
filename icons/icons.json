@@ -9,11 +9,17 @@
         "folderExpanded": {
             "iconPath": "./folder.expanded.svg"
         },
+        "command": {
+            "iconPath": "./command.svg"
+        },
         "js": {
             "iconPath": "./js.svg"
         },
         "json": {
             "iconPath": "./json.svg"
+        },
+        "md": {
+            "iconPath": "./md.svg"
         },
         "sketch": {
             "iconPath": "./sketch.svg"
@@ -41,8 +47,10 @@
     "folder": "folder",
     "folderExpanded": "folderExpanded",
     "fileExtensions": {
+        "command": "command",
         "js": "js",
         "json": "json",
+        "md": "md",
         "sketch": "sketch",
         "txt": "txt"
     },
