@@ -40,14 +40,13 @@ function copy(dir1, dir2)
     }
 }
 
-var src = path.dirname(process.argv[1])
-var root = path.dirname(src)
+var root = path.dirname(process.argv[1])
 var iconsDir = path.join(root, "icons")
 var iconsJsonFile = path.join(iconsDir, "icons.json")
-var defaultIconsDir = path.join(src, "default")
-var extensionsIconsDir = path.join(src, "extensions")
-var filesIconsDir = path.join(src, "files")
-var foldersIconsDir = path.join(src, "folders")
+var defaultIconsDir = path.join(root, "default")
+var extensionsIconsDir = path.join(root, "extensions")
+var filesIconsDir = path.join(root, "files")
+var foldersIconsDir = path.join(root, "folders")
 
 console.log("生成IconsJson文件")
 var icons = {
@@ -121,7 +120,7 @@ console.log("压缩图标文件")
 action(iconsDir, (file, name) =>
 {
     console.log("压缩：" + name)
-    child_process.execFileSync("svgo", [file])
+    child_process.execFileSync("svgo", ["--enable=removeDimensions", file])
 })
 
 console.log("清理现有文件")
