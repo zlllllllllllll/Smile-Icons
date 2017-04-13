@@ -1,56 +1,84 @@
 {
     "iconDefinitions": {
         "file": {
-            "iconPath": "./file.svg"
+            "iconPath": "./default/file.svg"
         },
         "folder": {
-            "iconPath": "./folder.svg"
+            "iconPath": "./default/folder.svg"
         },
         "folderExpanded": {
-            "iconPath": "./folder.expanded.svg"
+            "iconPath": "./default/folder.expanded.svg"
+        },
+        "bat": {
+            "iconPath": "./extensions/bat.svg"
+        },
+        "bmp": {
+            "iconPath": "./extensions/bmp.svg"
         },
         "command": {
-            "iconPath": "./command.svg"
+            "iconPath": "./extensions/command.svg"
+        },
+        "jpeg": {
+            "iconPath": "./extensions/jpeg.svg"
+        },
+        "jpg": {
+            "iconPath": "./extensions/jpg.svg"
         },
         "js": {
-            "iconPath": "./js.svg"
+            "iconPath": "./extensions/js.svg"
         },
         "json": {
-            "iconPath": "./json.svg"
+            "iconPath": "./extensions/json.svg"
         },
         "md": {
-            "iconPath": "./md.svg"
+            "iconPath": "./extensions/md.svg"
+        },
+        "png": {
+            "iconPath": "./extensions/png.svg"
+        },
+        "psd": {
+            "iconPath": "./extensions/psd.svg"
+        },
+        "sh": {
+            "iconPath": "./extensions/sh.svg"
         },
         "sketch": {
-            "iconPath": "./sketch.svg"
+            "iconPath": "./extensions/sketch.svg"
         },
         "txt": {
-            "iconPath": "./txt.svg"
+            "iconPath": "./extensions/txt.svg"
         },
         "license": {
-            "iconPath": "./license.svg"
+            "iconPath": "./files/license.svg"
         },
         ".vscode.expanded": {
-            "iconPath": "./.vscode.expanded.svg"
+            "iconPath": "./folders/.vscode.expanded.svg"
         },
         ".vscode": {
-            "iconPath": "./.vscode.svg"
+            "iconPath": "./folders/.vscode.svg"
         },
         "node_modules.expanded": {
-            "iconPath": "./node_modules.expanded.svg"
+            "iconPath": "./folders/node_modules.expanded.svg"
         },
         "node_modules": {
-            "iconPath": "./node_modules.svg"
+            "iconPath": "./folders/node_modules.svg"
         }
     },
     "file": "file",
     "folder": "folder",
     "folderExpanded": "folderExpanded",
     "fileExtensions": {
+        "bat": "bat",
+        "bmp": "bmp",
         "command": "command",
+        "jpeg": "jpeg",
+        "jpg": "jpg",
         "js": "js",
         "json": "json",
         "md": "md",
+        "png": "png",
+        "psd": "psd",
+        "sh": "sh",
         "sketch": "sketch",
         "txt": "txt"
     },
