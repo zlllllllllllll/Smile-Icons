@@ -2,7 +2,7 @@
     "name": "smile-icons",
     "displayName": "Smile Icons",
     "description": "做一些我所喜欢的图标",
-    "version": "1.3.2",
+    "version": "1.3.3",
     "publisher": "oneo",
     "engines": {
         "vscode": "^1.0.0"

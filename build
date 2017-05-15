@@ -1,32 +1,24 @@
-"use strict"
+#!/usr/bin/env node
 
-var fs = require("fs")
-var fse = require("fs-extra")
+var fs = require("fs-extra")
 var path = require("path")
 var child_process = require("child_process")
 
-function action(dir, callback)
-{
-    if (fse.existsSync(dir))
-    {
-        if (fse.statSync(dir).isDirectory())
-        {
-            fs.readdirSync(dir).forEach(filename =>
-            {
-                if (getExtension(filename) == "svg")
-                {
+function action(dir, callback) {
+    if (fs.existsSync(dir)) {
+        if (fs.statSync(dir).isDirectory()) {
+            fs.readdirSync(dir).forEach(filename => {
+                if (getExtension(filename) == "svg") {
                     callback(path.join(dir, filename), getName(filename))
                 }
             })
         }
     }
 }
-function getName(filename)
-{
+function getName(filename) {
     return filename.split(".").slice(0, -1).join(".")
 }
-function getExtension(filename)
-{
+function getExtension(filename) {
     return filename.split(".").slice(-1).join(".")
 }
 
@@ -71,39 +63,69 @@ var iconsObj = {
         // 内容与正常模式下一样
     }
 }
-action(extensions, (file, name) =>
-{
+action(extensions, (file, name) => {
     iconsObj.fileExtensions[name] = name
     iconsObj.iconDefinitions[name] = { iconPath: "./extensions/" + name + ".svg" }
 })
-action(files, (file, name) =>
-{
+action(files, (file, name) => {
     iconsObj.fileNames[name] = name
     iconsObj.iconDefinitions[name] = { iconPath: "./files/" + name + ".svg" }
 })
-action(folders, (file, name) =>
-{
-    if (getExtension(name) == "expanded")
-    {
+action(folders, (file, name) => {
+    if (getExtension(name) == "expanded") {
         iconsObj.folderNamesExpanded[getName(name)] = name
         iconsObj.iconDefinitions[name] = { iconPath: "./folders/" + name + ".svg" }
     }
-    else
-    {
+    else {
         iconsObj.folderNames[name] = name
         iconsObj.iconDefinitions[name] = { iconPath: "./folders/" + name + ".svg" }
     }
 })
-fse.ensureDirSync(icons)
-fse.outputJsonSync(iconsJson, iconsObj, { spaces: 4 })
+fs.ensureDirSync(icons)
+fs.outputJsonSync(iconsJson, iconsObj, { spaces: 4 })
 
 
 console.log("压缩图标文件")
+child_process.execFileSync("svgo", ["--enable=removeDimensions", "-f", root])
 child_process.execFileSync("svgo", ["--enable=removeDimensions", "-f", icons])
 child_process.execFileSync("svgo", ["--enable=removeDimensions", "-f", defaultIcons])
 child_process.execFileSync("svgo", ["--enable=removeDimensions", "-f", extensions])
 child_process.execFileSync("svgo", ["--enable=removeDimensions", "-f", files])
 child_process.execFileSync("svgo", ["--enable=removeDimensions", "-f", folders])
 
+console.log("复制到扩展目录")
+var vscode = path.resolve(process.env.HOME, "./.vscode/extensions/smile-icons-dev")
+fs.removeSync(vscode)
+fs.ensureDirSync(vscode)
+fs.copySync(__dirname, vscode)
+var package = fs.readJSONSync(path.resolve(vscode, "./package.json"))
+package.name = "smile-icons-dev"
+package.displayName = "Smile Icons Dev"
+package.contributes.iconThemes[0].id = package.name
+package.contributes.iconThemes[0].label = package.displayName
+fs.writeJSONSync(path.resolve(vscode, "./package.json"), package)
+
+console.log("生成示例内容")
+var examples = path.resolve(__dirname, "./examples")
+fs.removeSync(examples)
+fs.ensureDirSync(examples)
+fs.mkdirSync(path.resolve(examples, "./defaultFolder"))
+fs.createFileSync(path.resolve(examples, "./defaultFile"))
+action(extensions, (file, name) => {
+    console.log("生成：" + path.resolve(examples, "./extension." + name))
+    fs.createFileSync(path.resolve(examples, "./extension." + name))
+})
+action(files, (file, name) => {
+    console.log("生成：" + path.resolve(examples, "./" + name))
+    fs.createFileSync(path.resolve(examples, "./" + name))
+})
+action(folders, (file, name) => {
+    if (getExtension(name) != "expanded") {
+        console.log("生成：" + path.resolve(examples, "./" + name))
+        fs.mkdirSync(path.resolve(examples, "./" + name))
+    }
+})
+
 console.log("完成")
+
 process.exit()

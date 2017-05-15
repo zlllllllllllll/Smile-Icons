@@ -9,6 +9,9 @@
         "folderExpanded": {
             "iconPath": "./default/folder.expanded.svg"
         },
+        "7z": {
+            "iconPath": "./extensions/7z.svg"
+        },
         "bat": {
             "iconPath": "./extensions/bat.svg"
         },
@@ -17,6 +20,15 @@
         },
         "command": {
             "iconPath": "./extensions/command.svg"
+        },
+        "css": {
+            "iconPath": "./extensions/css.svg"
+        },
+        "ejs": {
+            "iconPath": "./extensions/ejs.svg"
+        },
+        "html": {
+            "iconPath": "./extensions/html.svg"
         },
         "jpeg": {
             "iconPath": "./extensions/jpeg.svg"
@@ -39,17 +51,47 @@
         "psd": {
             "iconPath": "./extensions/psd.svg"
         },
+        "rar": {
+            "iconPath": "./extensions/rar.svg"
+        },
         "sh": {
             "iconPath": "./extensions/sh.svg"
         },
         "sketch": {
             "iconPath": "./extensions/sketch.svg"
         },
+        "styl": {
+            "iconPath": "./extensions/styl.svg"
+        },
+        "svg": {
+            "iconPath": "./extensions/svg.svg"
+        },
         "txt": {
             "iconPath": "./extensions/txt.svg"
         },
+        "vue": {
+            "iconPath": "./extensions/vue.svg"
+        },
+        "xml": {
+            "iconPath": "./extensions/xml.svg"
+        },
+        "yml": {
+            "iconPath": "./extensions/yml.svg"
+        },
+        "zip": {
+            "iconPath": "./extensions/zip.svg"
+        },
+        ".babelrc": {
+            "iconPath": "./files/.babelrc.svg"
+        },
         "license": {
             "iconPath": "./files/license.svg"
+        },
+        "license.txt": {
+            "iconPath": "./files/license.txt.svg"
+        },
+        "webpack.config.js": {
+            "iconPath": "./files/webpack.config.js.svg"
         },
         ".vscode.expanded": {
             "iconPath": "./folders/.vscode.expanded.svg"
@@ -68,9 +110,13 @@
     "folder": "folder",
     "folderExpanded": "folderExpanded",
     "fileExtensions": {
+        "7z": "7z",
         "bat": "bat",
         "bmp": "bmp",
         "command": "command",
+        "css": "css",
+        "ejs": "ejs",
+        "html": "html",
         "jpeg": "jpeg",
         "jpg": "jpg",
         "js": "js",
@@ -78,12 +124,22 @@
         "md": "md",
         "png": "png",
         "psd": "psd",
+        "rar": "rar",
         "sh": "sh",
         "sketch": "sketch",
-        "txt": "txt"
+        "styl": "styl",
+        "svg": "svg",
+        "txt": "txt",
+        "vue": "vue",
+        "xml": "xml",
+        "yml": "yml",
+        "zip": "zip"
     },
     "fileNames": {
-        "license": "license"
+        ".babelrc": ".babelrc",
+        "license": "license",
+        "license.txt": "license.txt",
+        "webpack.config.js": "webpack.config.js"
     },
     "folderNames": {
         ".vscode": ".vscode",
