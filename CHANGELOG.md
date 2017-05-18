@@ -1,6 +1,13 @@
 # 更改日志
 
+## 1.3.4
+
+- 增加图标
+
+- > go(不要问我为啥画风不一样23333)
+
 ## 1.3.3
+
 - 增加预览图
 - 增加图标
     > svg, xml, css, ejs, html, styl, vue, yml, babel, webpack, zip, rar, 7z

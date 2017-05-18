@@ -27,6 +27,9 @@
         "ejs": {
             "iconPath": "./extensions/ejs.svg"
         },
+        "go": {
+            "iconPath": "./extensions/go.svg"
+        },
         "html": {
             "iconPath": "./extensions/html.svg"
         },
@@ -116,6 +119,7 @@
         "command": "command",
         "css": "css",
         "ejs": "ejs",
+        "go": "go",
         "html": "html",
         "jpeg": "jpeg",
         "jpg": "jpg",
