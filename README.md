@@ -1,6 +1,4 @@
-# <img alt="file" src="icons/icon.png" width = "22" height = "22"/> Smile Icons
-
-
+# ![icon](icons/icon_min.png) Smile Icons
 
 VSCode 图标插件，这是我所喜欢的样式，全部高清重绘
 
@@ -19,57 +17,65 @@ ext install smile-icons
 
 ## 预览
 
-<img alt="file" src="icons/default/file.png" width = "30" height = "30"/>
-<img alt="folder" src="icons/default/folder.png" width = "30" height = "30"/>
-<img alt="folder.expanded" src="icons/default/folder.expanded.png" width = "30" height = "30"/>
----
-<img alt="node_modules" src="icons/folders/node_modules.png" width = "30" height = "30"/>
-<img alt="node_modules.expanded" src="icons/folders/node_modules.expanded.png" width = "30" height = "30"/>
-<img alt=".vscode" src="icons/folders/.vscode.png" width = "30" height = "30"/>
-<img alt=".vscode.expanded" src="icons/folders/.vscode.expanded.png" width = "30" height = "30"/>
----
-<img alt=".babelrc" src="icons/files/.babelrc.png" width = "30" height = "30"/>
-<img alt=".gitignore" src="icons/files/.gitignore.png" width = "30" height = "30"/>
-<img alt="license" src="icons/files/license.png" width = "30" height = "30"/>
-<img alt="license.txt" src="icons/files/license.txt.png" width = "30" height = "30"/>
-<img alt="webpack.config.js" src="icons/files/webpack.config.js.png" width = "30" height = "30"/>
----
-<img alt="7z" src="icons/extensions/7z.png" width = "30" height = "30"/>
-<img alt="bat" src="icons/extensions/bat.png" width = "30" height = "30"/>
-<img alt="bmp" src="icons/extensions/bmp.png" width = "30" height = "30"/>
-<img alt="c" src="icons/extensions/c.png" width = "30" height = "30"/>
-<img alt="c++" src="icons/extensions/c++.png" width = "30" height = "30"/>
-<img alt="cc" src="icons/extensions/cc.png" width = "30" height = "30"/>
-<img alt="command" src="icons/extensions/command.png" width = "30" height = "30"/>
-<img alt="cpp" src="icons/extensions/cpp.png" width = "30" height = "30"/>
-<img alt="cs" src="icons/extensions/cs.png" width = "30" height = "30"/>
-<img alt="css" src="icons/extensions/css.png" width = "30" height = "30"/>
-<img alt="cxx" src="icons/extensions/cxx.png" width = "30" height = "30"/>
-<img alt="ejs" src="icons/extensions/ejs.png" width = "30" height = "30"/>
-<img alt="exe" src="icons/extensions/exe.png" width = "30" height = "30"/>
-<img alt="gif" src="icons/extensions/gif.png" width = "30" height = "30"/>
-<img alt="go" src="icons/extensions/go.png" width = "30" height = "30"/>
-<img alt="h" src="icons/extensions/h.png" width = "30" height = "30"/>
-<img alt="hpp" src="icons/extensions/hpp.png" width = "30" height = "30"/>
-<img alt="html" src="icons/extensions/html.png" width = "30" height = "30"/>
-<img alt="jpeg" src="icons/extensions/jpeg.png" width = "30" height = "30"/>
-<img alt="jpg" src="icons/extensions/jpg.png" width = "30" height = "30"/>
-<img alt="js" src="icons/extensions/js.png" width = "30" height = "30"/>
-<img alt="json" src="icons/extensions/json.png" width = "30" height = "30"/>
-<img alt="lua" src="icons/extensions/lua.png" width = "30" height = "30"/>
-<img alt="md" src="icons/extensions/md.png" width = "30" height = "30"/>
-<img alt="npmignore" src="icons/extensions/npmignore.png" width = "30" height = "30"/>
-<img alt="png" src="icons/extensions/png.png" width = "30" height = "30"/>
-<img alt="protobuf" src="icons/extensions/protobuf.png" width = "30" height = "30"/>
-<img alt="psd" src="icons/extensions/psd.png" width = "30" height = "30"/>
-<img alt="py" src="icons/extensions/py.png" width = "30" height = "30"/>
-<img alt="rar" src="icons/extensions/rar.png" width = "30" height = "30"/>
-<img alt="sh" src="icons/extensions/sh.png" width = "30" height = "30"/>
-<img alt="sketch" src="icons/extensions/sketch.png" width = "30" height = "30"/>
-<img alt="styl" src="icons/extensions/styl.png" width = "30" height = "30"/>
-<img alt="svg" src="icons/extensions/svg.png" width = "30" height = "30"/>
-<img alt="txt" src="icons/extensions/txt.png" width = "30" height = "30"/>
-<img alt="vue" src="icons/extensions/vue.png" width = "30" height = "30"/>
-<img alt="xml" src="icons/extensions/xml.png" width = "30" height = "30"/>
-<img alt="yml" src="icons/extensions/yml.png" width = "30" height = "30"/>
-<img alt="zip" src="icons/extensions/zip.png" width = "30" height = "30"/>
+默认
+
+![file](icons/default/file.png)
+![folder](icons/default/folder.png)
+![folder.expanded](icons/default/folder.expanded.png)
+
+文件夹
+
+![node_modules](icons/folders/node_modules.png)
+![node_modules.expanded](icons/folders/node_modules.expanded.png)
+![.vscode](icons/folders/.vscode.png)
+![.vscode.expanded](icons/folders/.vscode.expanded.png)
+
+文件
+
+![.babelrc](icons/files/.babelrc.png)
+![.gitignore](icons/files/.gitignore.png)
+![license](icons/files/license.png)
+![license.txt](icons/files/license.txt.png)
+![webpack.config.js](icons/files/webpack.config.js.png)
+
+扩展名
+
+![7z](icons/extensions/7z.png)
+![bat](icons/extensions/bat.png)
+![bmp](icons/extensions/bmp.png)
+![c](icons/extensions/c.png)
+![c++](icons/extensions/c++.png)
+![cc](icons/extensions/cc.png)
+![command](icons/extensions/command.png)
+![cpp](icons/extensions/cpp.png)
+![cs](icons/extensions/cs.png)
+![css](icons/extensions/css.png)
+![cxx](icons/extensions/cxx.png)
+![ejs](icons/extensions/ejs.png)
+![exe](icons/extensions/exe.png)
+![gif](icons/extensions/gif.png)
+![go](icons/extensions/go.png)
+![h](icons/extensions/h.png)
+![hpp](icons/extensions/hpp.png)
+![html](icons/extensions/html.png)
+![jpeg](icons/extensions/jpeg.png)
+![jpg](icons/extensions/jpg.png)
+![js](icons/extensions/js.png)
+![json](icons/extensions/json.png)
+![lua](icons/extensions/lua.png)
+![md](icons/extensions/md.png)
+![npmignore](icons/extensions/npmignore.png)
+![png](icons/extensions/png.png)
+![protobuf](icons/extensions/protobuf.png)
+![psd](icons/extensions/psd.png)
+![py](icons/extensions/py.png)
+![rar](icons/extensions/rar.png)
+![sh](icons/extensions/sh.png)
+![sketch](icons/extensions/sketch.png)
+![styl](icons/extensions/styl.png)
+![svg](icons/extensions/svg.png)
+![txt](icons/extensions/txt.png)
+![vue](icons/extensions/vue.png)
+![xml](icons/extensions/xml.png)
+![yml](icons/extensions/yml.png)
+![zip](icons/extensions/zip.png)

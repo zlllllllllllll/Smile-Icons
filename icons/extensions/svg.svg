@@ -1,1 +1,19 @@
-<svg viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M1 3.005A2 2 0 0 1 3.004 1h22c.55 0 1.309.313 1.702.706l3.588 3.588c.39.39.706 1.157.706 1.7v16.009A1.998 1.998 0 0 1 29.008 25H2.992C1.892 25 1 24.103 1 22.995V3.005z" id="a"/></defs><g fill="none" fill-rule="evenodd"><g transform="translate(5 8)"><use fill="#121212" xlink:href="#a"/><path stroke="#F5B354" stroke-width="2" d="M2 3.005v19.99A.998.998 0 0 0 2.992 24h26.016a.999.999 0 0 0 .992-.997V6.995c0-.28-.212-.793-.413-.994L26 2.413C25.794 2.209 25.29 2 25.005 2H3.004A1 1 0 0 0 2 3.005z"/></g><path d="M5 8h4v4H5V8zm0 22h4v4H5v-4zm28 0h4v4h-4v-4z" stroke="#F5B354" stroke-width="2" fill="#FFF"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1,3.00494659 C1,1.89764516 1.88976324,1 3.00359486,1 L25.004543,1 C25.5543187,1 26.3127724,1.31277239 26.7057732,1.70577316 L30.2942268,5.29422684 C30.6840146,5.68401459 31,6.45092539 31,6.99477117 L31,23.0025781 C31,24.1057238 30.1021596,25 29.008383,25 L2.99161703,25 C1.89167732,25 1,24.1029738 1,22.9950534 L1,3.00494659 Z" id="path-1"></path>
+    </defs>
+    <g id="扩展名-(icons/extensions-5-10)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="矢量图">
+            <g id="Group" transform="translate(5.000000, 8.000000)">
+                <g id="Mask">
+                    <use fill="#121212" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <path stroke="#F5B354" stroke-width="2" d="M2,3.00494659 L2,22.9950534 C2,23.5519156 2.44520033,24 2.99161703,24 L29.008383,24 C29.5518298,24 30,23.5514822 30,23.0025781 L30,6.99477117 C30,6.71418799 29.7879905,6.20220404 29.5871201,6.00133362 L25.9986664,2.41287994 C25.7943372,2.20855074 25.2907084,2 25.004543,2 L3.00359486,2 C2.44527569,2 2,2.44669671 2,3.00494659 Z"></path>
+                </g>
+                <path d="M0,0 L4,0 L4,4 L0,4 L0,0 Z M0,22 L4,22 L4,26 L0,26 L0,22 Z M28,22 L32,22 L32,26 L28,26 L28,22 Z" id="Combined-Shape" stroke="#F5B354" stroke-width="2" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
