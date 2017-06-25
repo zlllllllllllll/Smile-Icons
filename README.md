@@ -6,7 +6,7 @@ VSCode 图标插件，这是我所喜欢的样式，全部高清重绘
 
 ### 默认图标
 
-<img alt="file" src="./icons/default/file.svg" width = "30" height = "30"/>
+<img alt="file" src="https://github.com/1217950746/Smile-Icons/icons/default/file.svg" width = "30" height = "30"/>
 <img alt="folder" src="icons/default/folder.svg" width = "30" height = "30"/>
 <img alt="folder.expanded" src="icons/default/folder.expanded.svg" width = "30" height = "30"/>
 
