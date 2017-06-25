@@ -18,17 +18,47 @@
         "bmp": {
             "iconPath": "./extensions/bmp.svg"
         },
+        "c++": {
+            "iconPath": "./extensions/c++.svg"
+        },
+        "c": {
+            "iconPath": "./extensions/c.svg"
+        },
+        "cc": {
+            "iconPath": "./extensions/cc.svg"
+        },
         "command": {
             "iconPath": "./extensions/command.svg"
+        },
+        "cpp": {
+            "iconPath": "./extensions/cpp.svg"
+        },
+        "cs": {
+            "iconPath": "./extensions/cs.svg"
         },
         "css": {
             "iconPath": "./extensions/css.svg"
         },
+        "cxx": {
+            "iconPath": "./extensions/cxx.svg"
+        },
         "ejs": {
             "iconPath": "./extensions/ejs.svg"
         },
+        "exe": {
+            "iconPath": "./extensions/exe.svg"
+        },
+        "gif": {
+            "iconPath": "./extensions/gif.svg"
+        },
         "go": {
             "iconPath": "./extensions/go.svg"
+        },
+        "h": {
+            "iconPath": "./extensions/h.svg"
+        },
+        "hpp": {
+            "iconPath": "./extensions/hpp.svg"
         },
         "html": {
             "iconPath": "./extensions/html.svg"
@@ -45,14 +75,26 @@
         "json": {
             "iconPath": "./extensions/json.svg"
         },
+        "lua": {
+            "iconPath": "./extensions/lua.svg"
+        },
         "md": {
             "iconPath": "./extensions/md.svg"
+        },
+        "npmignore": {
+            "iconPath": "./extensions/npmignore.svg"
         },
         "png": {
             "iconPath": "./extensions/png.svg"
         },
+        "protobuf": {
+            "iconPath": "./extensions/protobuf.svg"
+        },
         "psd": {
             "iconPath": "./extensions/psd.svg"
+        },
+        "py": {
+            "iconPath": "./extensions/py.svg"
         },
         "rar": {
             "iconPath": "./extensions/rar.svg"
@@ -87,6 +129,9 @@
         ".babelrc": {
             "iconPath": "./files/.babelrc.svg"
         },
+        ".gitignore": {
+            "iconPath": "./files/.gitignore.svg"
+        },
         "license": {
             "iconPath": "./files/license.svg"
         },
@@ -116,18 +161,32 @@
         "7z": "7z",
         "bat": "bat",
         "bmp": "bmp",
+        "c++": "c++",
+        "c": "c",
+        "cc": "cc",
         "command": "command",
+        "cpp": "cpp",
+        "cs": "cs",
         "css": "css",
+        "cxx": "cxx",
         "ejs": "ejs",
+        "exe": "exe",
+        "gif": "gif",
         "go": "go",
+        "h": "h",
+        "hpp": "hpp",
         "html": "html",
         "jpeg": "jpeg",
         "jpg": "jpg",
         "js": "js",
         "json": "json",
+        "lua": "lua",
         "md": "md",
+        "npmignore": "npmignore",
         "png": "png",
+        "protobuf": "protobuf",
         "psd": "psd",
+        "py": "py",
         "rar": "rar",
         "sh": "sh",
         "sketch": "sketch",
@@ -141,6 +200,7 @@
     },
     "fileNames": {
         ".babelrc": ".babelrc",
+        ".gitignore": ".gitignore",
         "license": "license",
         "license.txt": "license.txt",
         "webpack.config.js": "webpack.config.js"

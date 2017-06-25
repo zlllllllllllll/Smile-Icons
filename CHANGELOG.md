@@ -1,16 +1,17 @@
 # 更改日志
 
-## 1.3.4
+## 1.3.5
+- 增加图标
+    > gitignore, c, c++, cc, cpp, cs, cxx, exe, gif, h, hpp, lua, protobuf, py
 
+## 1.3.4
 - 增加图标
     > go(不要问我为啥画风不一样23333)
 
 ## 1.3.3
-
 - 增加预览图
 - 增加图标
     > svg, xml, css, ejs, html, styl, vue, yml, babel, webpack, zip, rar, 7z
-
 - 优化部分图标
 
 ## 1.3.2
