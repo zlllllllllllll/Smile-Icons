@@ -1,5 +1,8 @@
 # 更改日志
 
+## 1.3.6
+- 重做预览效果
+
 ## 1.3.5
 - 增加图标
     > gitignore, c, c++, cc, cpp, cs, cxx, exe, gif, h, hpp, lua, protobuf, py
