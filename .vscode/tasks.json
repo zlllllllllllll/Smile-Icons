@@ -2,8 +2,22 @@
     "version": "0.1.0",
     "tasks": [
         {
+            "taskName": "debug",
+            "command": "go",
+            "args": [
+                "run",
+                "build.go",
+                "${workspaceRoot}"
+            ]
+        },
+        {
             "taskName": "build",
-            "command": "./build"
+            "command": "go",
+            "args": [
+                "build",
+                "-o=build",
+                "-ldflags=-s -w"
+            ]
         }
     ]
 }
