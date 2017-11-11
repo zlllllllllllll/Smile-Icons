@@ -178,6 +178,10 @@ func main() {
 		eachPngFileName(extensionsDir, func(name string) {
 			READMEStr += `<img src="icons/extensions/` + name + `.png" width="36px">`
 		})
+		READMEStr += "\n"
+		READMEStr += "\n"
+		READMEStr += "[请求适配需要的图标](https://github.com/1217950746/Smile-Icons/issues/new)"
+		READMEStr += "\n"
 		saveFile(READMEStr, READMEFile)
 	}
 }
