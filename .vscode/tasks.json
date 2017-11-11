@@ -2,21 +2,12 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "taskName": "run",
+            "label": "run",
             "command": "go",
             "args": [
                 "run",
                 "build.go",
                 "${workspaceRoot}"
-            ]
-        },
-        {
-            "taskName": "build",
-            "command": "go",
-            "args": [
-                "build",
-                "-o=build",
-                "-ldflags=-s -w"
             ]
         }
     ]
