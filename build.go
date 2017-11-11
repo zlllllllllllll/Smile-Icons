@@ -155,26 +155,26 @@ func main() {
 		READMEStr += "\n"
 		READMEStr += `默认图标` + "\n"
 		READMEStr += "\n"
-		READMEStr += `<img src="icons/default/file.png" width="36px">` + "\n"
-		READMEStr += `<img src="icons/default/folder.png" width="36px">` + "\n"
-		READMEStr += `<img src="icons/default/folder.expanded.png" width="36px">` + "\n"
+		READMEStr += `<img src="icons/default/file.png" width="36px">`
+		READMEStr += `<img src="icons/default/folder.png" width="36px">`
+		READMEStr += `<img src="icons/default/folder.expanded.png" width="36px">`
 		READMEStr += "\n"
 		READMEStr += `目录图标` + "\n"
 		READMEStr += "\n"
 		eachPngFileName(foldersDir, func(name string) {
-			READMEStr += `<img src="icons/folders/` + name + `.png" width="36px">` + "\n"
+			READMEStr += `<img src="icons/folders/` + name + `.png" width="36px">`
 		})
 		READMEStr += "\n"
 		READMEStr += `文件图标` + "\n"
 		READMEStr += "\n"
 		eachPngFileName(filesDir, func(name string) {
-			READMEStr += `<img src="icons/files/` + name + `.png" width="36px">` + "\n"
+			READMEStr += `<img src="icons/files/` + name + `.png" width="36px">`
 		})
 		READMEStr += "\n"
 		READMEStr += `扩展图标` + "\n"
 		READMEStr += "\n"
 		eachPngFileName(extensionsDir, func(name string) {
-			READMEStr += `<img src="icons/extensions/` + name + `.png" width="36px">` + "\n"
+			READMEStr += `<img src="icons/extensions/` + name + `.png" width="36px">`
 		})
 		saveFile(READMEStr, READMEFile)
 	}
